@@ -9,7 +9,7 @@ export function CompleteChallenge() {
   return (
     <div className={styles.CompleteChallengeContainer}>
       <span>Desafios completos</span>
-      <span>{ challengesCompleted }</span>
+      <span>{challengesCompleted}</span>
     </div>
   );
 }

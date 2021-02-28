@@ -7,6 +7,7 @@ import { CompleteChallenge } from "../components/CompleteChallenge";
 import { Countdown } from "../components/Countdown";
 
 import { ChallengeBox } from "../components/ChallengeBox";
+import { CountdownProvider } from '../contexts/CountdownContenxt';
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
 
     <ExperienceBar />
 
+    <CountdownProvider>
     <section>
       <div>
         <Profile />
@@ -29,6 +31,7 @@ export default function Home() {
         <ChallengeBox />
       </div>
     </section>
+    </CountdownProvider>
   </div>
   )
 }
